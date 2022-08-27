@@ -37,5 +37,5 @@ def ins_detail():
     return  render_template('result.html',res=result[0],name=user_name,mb=user_mob,gn=user_Gender,ag=user_age,bm=user_bmi,ch=user_child)
 
 if __name__=="__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0',port=8080,debug=False)
 
